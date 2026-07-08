@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #22c55e;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Register</h2>
+
+    <form action="/register" method="POST">
+        <input type="text" name="username" placeholder="Enter Username" required />
+        
+        <input type="password" name="password" placeholder="Enter Password" required />
+        
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="link">
+        <p>Already have account? <a href="/login">Login</a></p>
+    </div>
+</div>
+
+</body>
+</html>

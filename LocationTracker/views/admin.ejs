@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #1e293b;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.users {
+    background: #334155;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Map */
+#map {
+    width: 70%;
+    height: 100vh;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- USER LIST -->
+    <div class="sidebar">
+        <h2>Live Users</h2>
+        <div id="users"></div>
+    </div>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="/js/adminMap.js"></script>
+</body>
+</html>

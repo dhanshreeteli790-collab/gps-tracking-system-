@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+
+
+  <style>
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    display: flex;
+    font-size: 34px;
+    font-weight: bold;
+    background: linear-gradient(to right, #38bdf8, #22c55e);
+    
+    color: transparent;
+    margin-bottom: 5px;
+    -webkit-background-clip: text;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+
+     body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+   .container {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+  </style>
+</head>
+<body>
+
+  <div class="page">
+
+    <div class="header">
+      <h1 class="title">🚀 Live Tracking Location</h1>
+      <p class="subtitle">Track users in real-time</p>
+    </div>
+  <div class="container">
+<form action="/login" method="POST">
+  <input type="text" name="username" placeholder="Enter your Name" required>
+  <input type="password" name="password" placeholder="Enter password" required>
+  <button type="submit">Login</button>
+</form>
+<div class="link">
+  Don't have an account? <a href="/register">Register</a>
+</div>
+</div>
+</body>
+</html>
